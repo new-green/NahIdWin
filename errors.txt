@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/story.rpy", line 23: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "O kazansın."
+                 ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Thu Jun 20 12:35:39 2024

@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/definitions/splash.rpy", line 299, in script
+    python:
+  File "game/definitions/splash.rpy", line 307, in <module>
+    process_list = subprocess.check_output("powershell (Get-Process).ProcessName", shell=True).lower().replace("\r", "").split("\n") # For W11 builds > 22000
+TypeError: a bytes-like object is required, not 'str'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/definitions/splash.rpy", line 299, in script
+    python:
+  File "C:\Program Files\renpy-8.1.0-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Program Files\renpy-8.1.0-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/definitions/splash.rpy", line 307, in <module>
+    process_list = subprocess.check_output("powershell (Get-Process).ProcessName", shell=True).lower().replace("\r", "").split("\n") # For W11 builds > 22000
+TypeError: a bytes-like object is required, not 'str'
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.1.0.23051307
+Nah I'd Win 0.0.1
+Mon Jul 15 18:02:35 2024
