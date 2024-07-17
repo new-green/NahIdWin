@@ -1,0 +1,2 @@
+# NahIdWin
+DDLC şaka modu
